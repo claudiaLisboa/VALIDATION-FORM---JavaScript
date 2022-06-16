@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr_CA">
+<head>
+    <!-- Lisboa Claudia
+        Classes ES6 et modules
+        For studding proposes-->
+    <!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Classes ES6 et modules</title>
+	<meta name="description" content="Exercice 2 sur les classes ES6 et modules (sommatif) du cours 582-31F-MA Programmation d'interface Web 2">
+
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+
+    <!-- scripts -->
+
+
+
+</head>
+
+<body>
+	<header>
+		<h1> Classes ES6 et modules <small>(sommatif)</small></h1>
+	</header>
+	<main>
+
+        <h2>Saisir vos informations</h2>
+        
+        <div data-js-form>
+
+            <form>
+
+                <div class="input-wrapper" data-js-input-wrapper>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" value="test" required><small class="error-message" data-js-error-msg></small>
+                    <!-- <input type="text" id="nom" name="nom" required><small class="error-message" data-js-error-msg></small> -->
+                </div>
+
+                <div class="input-wrapper" data-js-input-wrapper>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" value="test" required><small class="error-message" data-js-error-msg></small>
+                    <!-- <input type="text" id="prenom" name="prenom" required><small class="error-message" data-js-error-msg></small> -->
+                </div>
+
+                <div class="input-wrapper" data-js-input-wrapper>
+                    <label for="courriel">Courriel :</label>
+                    <input type="email" id="email" name="courriel" value="test@test.ca" required><small class="error-message" data-js-error-msg></small>
+                    <!-- <input type="email" id="email" name="courriel" required><small class="error-message" data-js-error-msg></small> -->
+                </div>
+
+                <div class="input-wrapper" data-js-input-wrapper data-js-radio="required" data-js-input="âge">
+
+                    <p>Âge :</p>
+             
+                    <input type="radio" id="radio-majeur" name="radio-age" value="majeur">
+                    <label for="radio-majeur"> Majeur</label><br>
+
+                    <input type="radio" id="radio-mineur" name="radio-age" value="mineur">
+                    <label for="radio-mineur"> Mineur</label>
+                    <small class="error-message" data-js-error-msg></small>
+                </div>
+
+                <button data-js-submit>Soumettre</button>
+
+            </form>
+
+            <div class="thank thank--hidden" data-js-thank>
+                <h3>Merci !</h3>
+            </div>
+    
+        </div>
+	</main>
+</body>
+</html>
