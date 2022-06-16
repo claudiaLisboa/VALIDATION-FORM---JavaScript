@@ -7,7 +7,25 @@ class Formulaire {
      * Si valide, gestion du message 'Merci !'
      */
 
+     constructor(el) {
+        this._el = el;
+        // console.log(this._el);
+        this.init();
+    }
 
+    init() {
+        this.addEventListener();
+    }
 
+    addEventListener() {
+        const button = this._el.querySelector('[data-js-submit]');
 
+        button.addEventListener("click", () => {
+            this.validate()
+        }, false);
+    }
+
+    validate() {
+        alert('!');
+    }
 }
