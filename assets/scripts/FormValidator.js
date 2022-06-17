@@ -1,4 +1,4 @@
-class FormValidator {
+export class FormValidator {
 
     /**
      * Récupérer les champs à valider :
@@ -10,7 +10,13 @@ class FormValidator {
      * Getter isValid
      */
 
-
+    
+        constructor(form) {
+            this._form = form;
+            this._isValid = true;
+            this.init();
+        }
+    
 
 
 }
