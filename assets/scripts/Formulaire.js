@@ -1,4 +1,6 @@
-class Formulaire {
+import { FormValidator } from "./FormValidator.js";
+
+export class Formulaire {
 
     /**
      * Récupérer le formulaire, le bouton et les éléments DOM nécessaires
@@ -7,7 +9,7 @@ class Formulaire {
      * Si valide, gestion du message 'Merci !'
      */
 
-     constructor(conteneur) {
+    constructor(conteneur) {
         this._conteneur = conteneur;
 
         // Le vrai formulaire qui est dans le conteneur.

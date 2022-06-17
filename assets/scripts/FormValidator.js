@@ -113,6 +113,5 @@ export class FormValidator {
             return this._isValid;
         }
     
-    }
-
 }
+
